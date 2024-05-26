@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNo</title>
+    
+</head>
+<body>
+    <script>
+var num = parseInt(prompt("Enter the number:"));
+console.log(num);
+//prime no = num/num===0
+
+if(num===1){
+console.log("1 is neither a prime number nor a composite number.");
+}else{
+    var count=0;
+    for(let i=2; i<num ; i++){
+        if(num%i===0){
+        count++;
+        }
+    }
+}
+if(count===0){
+console.log("Prime Number");
+ document.write( num , " Prime Number");
+}else{
+console.log("Not a Prime Number");
+ document.write(num , " Not a Prime Number");
+}
+
+
+    </script>
+    
+
+</body>
+</html>
